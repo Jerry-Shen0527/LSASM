@@ -69,7 +69,7 @@ if use_LSASM:
     print('----------------- Propagating with ASASM -----------------')
     # use "12" for thin lens + spherical wave
     # use "3" for diffuser
-    Uin = InputField("12", wvls, (thetaX, thetaY), r, z0, f, zf, s_LSASM)
+    Uin = InputField("3", wvls, (thetaX, thetaY), r, z0, f, zf, s_LSASM)
 
     from LSASM import LeastSamplingASM
     device = 'cuda:0'
